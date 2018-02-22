@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace recalculation
+{
+    struct Book
+    
+
+    enum Breed
+    {
+        dog,cat,bird,bear,tiger
+    }
+
+    class Animal
+    {
+        public Breed breed;
+
+        public Animal(Breed breed)
+        {
+            this.breed = breed;
+        }
+
+        public void Print ()
+        {
+            Console.WriteLine(breed);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Animal dog = new Animal (Breed.dog);
+            dog.Print();
+
+        }
+    }
+}
